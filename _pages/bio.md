@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /bio/
-title: bio
+title: Bio
 description: 
 nav: true
 nav_order: 2

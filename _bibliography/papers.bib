@@ -102,7 +102,7 @@
   bibtex_show={true},
   title={Approximating interactive human evaluation with self-play for open-domain dialog systems},
   abstract={Building an open-domain conversational agent is a challenging problem. Current evaluation methods, mostly post-hoc judgments of static conversation, do not capture conversation quality in a realistic interactive context. In this paper, we investigate interactive human evaluation and provide evidence for its necessity; we then introduce a novel, model-agnostic, and dataset-agnostic method to approximate it. In particular, we propose a self-play scenario where the dialog system talks to itself and we calculate a combination of proxies such as sentiment and semantic coherence on the conversation trajectory. We show that this metric is capable of capturing the human-rated quality of a dialog model better than any automated metric known to-date, achieving a significant Pearson correlation (r>.7, p<.05). To investigate the strengths of this novel metric and interactive evaluation in comparison to state-of-the-art metrics and human evaluation of static conversations, we perform extended experiments with a set of models, including several that make novel improvements to recent hierarchical dialog generation architectures through sentiment and semantic knowledge distillation on the utterance level. Finally, we open-source the interactive evaluation platform we built and the dataset we collected to allow researchers to efficiently deploy and evaluate dialog models.},
-  author={Ghandeharioun*, Asma and Shen*, Judy Hanwen and Jaques*, Natasha and Ferguson, Craig and Jones, Noah and Lapedriza, Agata and Picard, Rosalind},
+  author={Ghandeharioun*, Asma and Shen*, Judy Hanwen and Jaques*, Natasha and Ferguson, Craig and Jones, Noah and Lapedriza, Agata and Picard, Rosalind W},
   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   volume={32},
   year={2019},
@@ -128,7 +128,7 @@
   bibtex_show={true},
   title={Hierarchical reinforcement learning for open-domain dialog},
   abstract={Open-domain dialog generation is a challenging problem; maximum likelihood training can lead to repetitive outputs, models have difficulty tracking long-term conversational goals, and training on standard movie or online datasets may lead to the generation of inappropriate, biased, or offensive text. Reinforcement Learning (RL) is a powerful framework that could potentially address these issues, for example by allowing a dialog model to optimize for reducing toxicity and repetitiveness. However, previous approaches which apply RL to open-domain dialog generation do so at the word level, making it difficult for the model to learn proper credit assignment for long-term conversational rewards. In this paper, we propose a novel approach to hierarchical reinforcement learning, VHRL, which uses policy gradients to tune the utterance-level embedding of a variational sequence model. This hierarchical approach provides greater flexibility for learning long-term, conversational rewards. We use self-play and RL to optimize for a set of human-centered conversation metrics, and show that our approach provides significant improvements -- in terms of both human evaluation and automatic metrics -- over state-of-the-art dialog models, including Transformers.},
-  author={Saleh*, Abdelrhman and Jaques*, Natasha and Ghandeharioun, Asma and Shen, Judy and Picard, Rosalind},
+  author={Saleh*, Abdelrhman and Jaques*, Natasha and Ghandeharioun, Asma and Shen, Judy and Picard, Rosalind W},
   booktitle={Proceedings of the AAAI conference on artificial intelligence (AAAI)},
   volume={34},
   number={05},
@@ -144,7 +144,7 @@
   bibtex_show={true},
   title={Way off-policy batch deep reinforcement learning of implicit human preferences in dialog},
   abstract={Most deep reinforcement learning (RL) systems are not able to learn effectively from off-policy data, especially if they cannot explore online in the environment. These are critical shortcomings for applying RL to real-world problems where collecting data is expensive, and models must be tested offline before being deployed to interact with the environment -- e.g. systems that learn from human interaction. Thus, we develop a novel class of off-policy batch RL algorithms, which are able to effectively learn offline, without exploring, from a fixed batch of human interaction data. We leverage models pre-trained on data as a strong prior, and use KL-control to penalize divergence from this prior during RL training. We also use dropout-based uncertainty estimates to lower bound the target Q-values as a more efficient alternative to Double Q-Learning. The algorithms are tested on the problem of open-domain dialog generation -- a challenging reinforcement learning problem with a 20,000-dimensional action space. Using our Way Off-Policy algorithm, we can extract multiple different reward functions post-hoc from collected human interaction data, and learn effectively from all of these. We test the real-world generalization of these systems by deploying them live to converse with humans in an open-domain setting, and demonstrate that our algorithm achieves significant improvements over prior methods in off-policy batch RL.},
-  author={Jaques, Natasha and Ghandeharioun, Asma and Shen, Judy Hanwen and Ferguson, Craig and Lapedriza, Agata and Jones, Noah and Gu, Shixiang and Picard, Rosalind},
+  author={Jaques, Natasha and Ghandeharioun, Asma and Shen, Judy Hanwen and Ferguson, Craig and Lapedriza, Agata and Jones, Noah and Gu, Shixiang and Picard, Rosalind W},
   journal={arXiv preprint arXiv:1907.00456},
   code={https://github.com/natashamjaques/neural_chat},
   year={2019},
@@ -203,4 +203,267 @@
   school={Massachusetts Institute of Technology},
   pdf={ghandeharioun-asma_gh-phd-MAS-2021-thesis.pdf},
   preview={thesis.png}
+}
+
+@inproceedings{jaques2015predicting,
+  title={Predicting students' happiness from physiology, phone, mobility, and behavioral data},
+  author={Jaques, Natasha and Taylor, Sara and Azaria, Asaph and Ghandeharioun, Asma and Sano, Akane and Picard, Rosalind W},
+  abstract={In order to model students' happiness, we apply machine learning methods to data collected from undergrad students monitored over the course of one month each. The data collected include physiological signals, location, smartphone logs, and survey responses to behavioral questions. Each day, participants reported their wellbeing on measures including stress, health, and happiness. Because of the relationship between happiness and depression, modeling happiness may help us to detect individuals who are at risk of depression and guide interventions to help them. We are also interested in how behavioral factors (such as sleep and social activity) affect happiness positively and negatively. A variety of machine learning and feature selection techniques are compared, including Gaussian Mixture Models and ensemble classification. We achieve 70% classification accuracy of self-reported happiness on held-out test data.},
+  booktitle={2015 International Conference on Affective Computing and Intelligent Interaction (ACII)},
+  pages={222--228},
+  year={2015},
+  organization={IEEE},
+  pdf={10-ACII.pdf},
+  html={https://ieeexplore.ieee.org/document/7344575},
+  preview={moodpred.png},
+}
+
+@article{ghandeharioun2016kind,
+  title={"Kind and Grateful": A context-sensitive smartphone app utilizing inspirational content to promote gratitude},
+  author={Ghandeharioun, Asma and Azaria, Asaph and Taylor, Sara and Picard, Rosalind W},
+  abstract={Background: Previous research has shown that gratitude positively influences psychological wellbeing and physical health. Grateful people are reported to feel more optimistic and happy, to better mitigate aversive experiences, and to have stronger interpersonal bonds. Gratitude interventions have been shown to result in improved sleep, more frequent exercise and stronger cardiovascular and immune systems. These findings call for the development of technologies that would inspire gratitude. This paper presents a novel system designed toward this end.  Methods: We leverage pervasive technologies to naturally embed inspiration to express gratitude in everyday life. Novel to this work, mobile sensor data is utilized to infer optimal moments for stimulating contextually relevant thankfulness and appreciation. Sporadic mood measurements are inventively obtained through the smartphone lock screen, investigating their interplay with grateful expressions. Both momentary thankful emotion and dispositional gratitude are measured. To evaluate our system, we ran two rounds of randomized control trials (RCT), including a pilot study (N = 15, 2 weeks) and a main study (N = 27, 5 weeks). Studies’ participants were provided with a newly developed smartphone app through which they were asked to express gratitude; the app displayed inspirational content to only the intervention group, while measuring contextual cues for all users.  Results: In both rounds of the RCT, the intervention was associated with improved thankful behavior. Significant increase was observed in multiple facets of practicing gratitude in the intervention groups. The average frequency of practicing thankfulness increased by more than 120 %, comparing the baseline weeks with the intervention weeks of the main study. In contrast, the control group of the same study exhibited a decrease of 90 % in the frequency of thankful expressions. In the course of the study’s 5 weeks, increases in dispositional gratitude and in psychological wellbeing were also apparent. Analyzing the relation between mood and gratitude expressions, our data suggest that practicing gratitude increases the probability of going up in terms of emotional valence and down in terms of emotional arousal. The influences of inspirational content and contextual cues on promoting thankful behavior were also analyzed: We present data suggesting that the more successful times for eliciting expressions of gratitude tend to be shortly after a social experience, shortly after location change, and shortly after physical activity.  Conclusions: The results support our intervention as an impactful method to promote grateful affect and behavior. Moreover, they provide insights into design and evaluation of general behavioral intervention technologies.},
+  journal={Psychology of well-being},
+  volume={6},
+  pages={1--21},
+  year={2016},
+  publisher={Springer Berlin Heidelberg},
+  html={https://psywb.springeropen.com/articles/10.1186/s13612-016-0046-2},
+  pdf={s13612-016-0046-2.pdf},
+  preview={kindandgrateful.jpg}
+}
+
+@inproceedings{ghandeharioun2017brightbeat,
+  title={BrightBeat: Effortlessly influencing breathing for cultivating calmness and focus},
+  author={Ghandeharioun, Asma and Picard, Rosalind W},
+  abstract={While technology is usually associated with causing stress, technology also has the potential to bring about calm. In particular, breathing usually speeds up with higher stress, but it can be slowed through a manipulation, and in so doing, it can help the person lower their stress and improve their focus. This paper introduces BrightBeat, a set of seamless visual and auditory interventions that look like respiratory biofeedback, rhythmically oscillating, but that are tuned to appear with a slower speed, with the aim of slowing a stressed computer user's breathing and, consequently, bringing a sense of focus and calmness. These interventions were designed to run easily on commonplace personal electronic devices and to not require any focused attention in order to be effective. We have run a randomized placebo-controlled trial and examined both objective and subjective measures of impact with N=32 users undergoing work tasks. BrightBeat significantly influenced slower breathing, had a lasting effect, improved self-reported calmness and focus, and was highly preferred for future use.},
+  booktitle={Proceedings of the 2017 CHI conference extended abstracts on human factors in computing systems},
+  pages={1624--1631},
+  year={2017},
+  preview={brightbeat.gif},
+  html={https://dl.acm.org/doi/10.1145/3027063.3053164},
+}
+
+@inproceedings{ghandeharioun2017objective,
+  title={Objective Assessment of Depressive Symptoms with Machine Learning and Wearable Sensors Data},
+  author={Ghandeharioun, Asma and Fedor, Szymon and Sangermano, Lisa and Ionescu, Dawn F and Alpert, Jonathan and Dale, Chelsea and Sontag, David and Picard, Rosalind W},
+  abstract={Depression is the major cause of years lived in disability world-wide; however, its diagnosis and tracking methods still rely mainly on assessing self-reported depressive symptoms, methods that originated more than fifty years ago. These methods, which usually involve filling out surveys or engaging in face-to-face interviews, provide limited accuracy and reliability and are costly to track and scale. In this paper, we develop and test the efficacy of machine learning techniques applied to objective data captured passively and continuously from E4 wearable wristbands and from sensors in an Android phone for predicting the Hamilton Depression Rating Scale (HDRS). Input data include electrodermal activity (EDA), sleep behavior, motion, phone-based communication, location changes, and phone usage patterns. We introduce our feature generation and transformation process, imputing missing clinical scores from self-reported measures, and predicting depression severity from continuous sensor measurements. While HDRS ranges between 0 and 52, we were able to impute it with 2.8 RMSE and predict it with 4.5 RMSE which are low relative errors. Analyzing the features and their relation to depressive symptoms, we found that poor mental health was accompanied by more irregular sleep, less motion, fewer incoming messages, less variability in location patterns, and higher asymmetry of EDA between the right and the left wrists.},
+  booktitle={2017 7th international conference on Affective Computing and Intelligent Interaction (ACII)},
+  year={2017},
+  organization={IEEE},
+  pdf={17.ghandeharioun_etal_objective_ACII.pdf},
+  html={https://ieeexplore.ieee.org/document/8273620},
+  preview={objectivedepression.png},
+}
+
+@inproceedings{leslie2019engineering,
+  title={Engineering music to slow breathing and invite relaxed physiology},
+  author={Leslie, Grace and Ghandeharioun, Asma and Zhou, Diane and Picard, Rosalind W},
+  abstract={We engineered an interactive music system that influences a user's breathing rate to induce a relaxation response. This system generates ambient music containing periodic shifts in loudness that are determined by the user's own breathing patterns. We evaluated the efficacy of this music intervention for participants who were engaged in an attention-demanding task, and thus explicitly not focusing on their breathing or on listening to the music. We measured breathing patterns in addition to multiple peripheral and cortical indicators of physiological arousal while users experienced three different interaction designs: (1) a “Fixed Tempo” amplitude modulation rate at six beats per minute; (2) a “Personalized Tempo” modulation rate fixed at 75% of each individual's breathing rate baseline, and (3) a “Personalized Envelope” design in which the amplitude modulation matches each individual's breathing pattern in real-time. Our results revealed that each interactive music design slowed down breathing rates, with the “Personalized Tempo” design having the largest effect, one that was more significant than the non-personalized design. The physiological arousal indicators (electrodermal activity, heart rate, and slow cortical potentials measured in EEG) showed concomitant reductions, suggesting that slowing users' breathing rates shifted them towards a more calmed state. These results suggest that interactive music incorporating biometric data may have greater effects on physiology than traditional recorded music.
+},
+  booktitle={2019 8th international conference on Affective Computing and Intelligent Interaction (ACII)},
+  pages={1--7},
+  year={2019},
+  organization={IEEE},
+  html={https://www.computer.org/csdl/proceedings-article/acii/2019/08925531/1fHGEL5fRde},
+  preview={brainbeat.gif},
+  pdf={ACII_117.pdf},
+}
+
+@inproceedings{jones2019analysis,
+  title={Analysis of online suicide risk with document embeddings and latent dirichlet allocation},
+  author={Jones, Noah and Jaques, Natasha and Pataranutaporn, Pat and Ghandeharioun, Asma and Picard, Rosalind W},
+  abstract={Machine learning to infer suicide risk and urgency is applied to a dataset of Reddit users in which the risk and urgency labels were derived from crowdsource consensus. We present the results of machine learning models based on transfer learning from document embeddings trained on large external corpora, and find that they have very high F1 scores (.83 -. 92) in distinguishing which users are labeled as being most at risk of committing suicide. We further show that the document embedding approach outperforms a method based on word importance, where important words were identified by domain experts. Finally, we find, using a Latent Dirichlet Allocation (LDA) topic model, that users labeled at-risk for suicide post about different topics to the rest of Reddit than non-suicidal users.},
+  booktitle={2019 8th International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW)},
+  pages={1--5},
+  year={2019},
+  organization={IEEE},
+  html={https://ieeexplore.ieee.org/document/8925077},
+  preview={suicidepred.png},
+}
+
+@inproceedings{zepf2020studying,
+  title={Studying personalized just-in-time auditory breathing guides and potential safety implications during simulated driving},
+  author={Zepf, Sebastian and El Haouij, Neska and Lee, Jinmo and Ghandeharioun, Asma and Hernandez, Javier and Picard, Rosalind W},
+  abstract={Driving can occupy a considerable part of our daily lives and is often associated with high levels of stress. Motivated by the effectiveness of controlled breathing, this work studies the potential use of breathing interventions while driving to help manage stress. In particular, we implemented and evaluated a closed-loop system that monitored the breathing rate of drivers in real-time and delivered either a conscious or an unconscious personalized acoustic breathing guide whenever needed. In a study with 24 participants, we observed that conscious interventions more effectively reduced the breathing rate but also increased the number of driving mistakes. We observed that prior driving experience as well as personality are significantly associated with the effect of the interventions, which highlights the importance of considering user profiles for in-car stress management interventions.},
+  booktitle={Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization},
+  pages={275--283},
+  year={2020},
+  html={https://dl.acm.org/doi/abs/10.1145/3340631.3394854},
+  pdf={3340631.3394854.pdf},
+  preview={justintime.png},
+}
+
+@inproceedings{lewis2023mixed,
+  title={Mixed effects random forests for personalised predictions of clinical depression severity},
+  author={Lewis, Robert A and Ghandeharioun, Asma and Fedor, Szymon and Pedrelli, Paola and Picard, Rosalind W and Mischoulon, David},
+  abstract={This work demonstrates how mixed effects random forests enable accurate predictions of depression severity using multimodal physiological and digital activity data collected from an 8-week study involving 31 patients with major depressive disorder. We show that mixed effects random forests outperform standard random forests and personal average baselines when predicting clinical Hamilton Depression Rating Scale scores (HDRS_17). Compared to the latter baseline, accuracy is significantly improved for each patient by an average of 0.199-0.276 in terms of mean absolute error (p<0.05). This is noteworthy as these simple baselines frequently outperform machine learning methods in mental health prediction tasks. We suggest that this improved performance results from the ability of the mixed effects random forest to personalise model parameters to individuals in the dataset. However, we find that these improvements pertain exclusively to scenarios where labelled patient data are available to the model at training time. Investigating methods that improve accuracy when generalising to new patients is left as important future work.},
+  booktitle={Workshop on Computational Approaches to Mental Health @ ICML},
+  year={2021},
+  html={https://icml.cc/virtual/2021/13391},
+  pdf={2301.09815.pdf},
+  preview={mixedeffect.png},
+}
+
+@article{pedrelli2020monitoring,
+  title={Monitoring changes in depression severity using wearable and mobile sensors},
+  author={Pedrelli, Paola and Fedor, Szymon and Ghandeharioun, Asma and Howe, Esther and Ionescu, Dawn F and Bhathena, Darian and Fisher, Lauren B and Cusin, Cristina and Nyer, Maren and Yeung, Albert and others},
+  abstract={Background: While preliminary evidence suggests that sensors may be employed to detect presence of low mood it is still unclear whether they can be leveraged for measuring depression symptom severity. This study evaluates the feasibility and performance of assessing depressive symptom severity by using behavioral and physiological features obtained from wristband and smartphone sensors.  Method: Participants were thirty-one individuals with Major Depressive Disorder (MDD). The protocol included 8 weeks of behavioral and physiological monitoring through smartphone and wristband sensors and six in-person clinical interviews during which depression was assessed with the 17-item Hamilton Depression Rating Scale (HDRS-17).  Results: Participants wore the right and left wrist sensors 92 and 94% of the time respectively. Three machine-learning models estimating depressive symptom severity were developed–one combining features from smartphone and wearable sensors, one including only features from the smartphones, and one including features from wrist sensors–and evaluated in two different scenarios. Correlations between the models' estimate of HDRS scores and clinician-rated HDRS ranged from moderate to high (0.46 [CI: 0.42, 0.74] to 0.7 [CI: 0.66, 0.74]) and had moderate accuracy with Mean Absolute Error ranging between 3.88 ± 0.18 and 4.74 ± 1.24. The time-split scenario of the model including only features from the smartphones performed the best. The ten most predictive features in the model combining physiological and mobile features were related to mobile phone engagement, activity level, skin conductance, and heart rate variability.  Conclusion: Monitoring of MDD patients through smartphones and wrist sensors following a clinician-rated HDRS assessment is feasible and may provide an estimate of changes in depressive symptom severity. Future studies should further examine the best features to estimate depressive symptoms and strategies to further enhance accuracy.},
+  journal={Frontiers in psychiatry},
+  volume={11},
+  pages={584711},
+  year={2020},
+  publisher={Frontiers},
+  html={https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2020.584711/full},
+  pdf={fpsyt-11-584711.pdf},
+  preview={depression.jpeg},
+}
+
+
+@article{ghandeharioun2016promoting,
+  title={Promoting kindness and gratitude with a smartphone and triggers},
+  author={Ghandeharioun, Asma and Azaria, Asaph and Taylor, Sara and Maes, Pattie and Picard, Rosalind W},
+  journal={Annals of Behavioral Medicine},
+  volume={50},
+  number={Supplement 1},
+  pages={266},
+  year={2016},
+  preview={13612_2016_46_Fig6.jpg},
+}
+
+
+@article{pedrelli2017integrating,
+  title={Integrating EMA, Clinical Assessment and Wearable Sensors to Examine the Association between Major Depressive Disorder (MDD) and Alcohol Use},
+  author={Pedrelli, Paola and Howe, Esther and Mischoulon, David and Picard, Rosalind W and Ghandeharioun, Asma and Fedor, Szymon},
+  abstract={Background: Depression is the leading cause of disability worldwide. Heavy drinking often co-occurs with Major Depressive Disorder (MDD), preventing the amelioration of symptoms and increasing disability. New technology-based assessment tools such as ecological momentary assessment (EMA) and wearable sensors provide the opportunity for a more detailed examination of the interplay between these two conditions. While the association between low mood and heavy drinking has been extensively examined, multi-method assessments including EMA, sensors and clinician-rated measures have not been utilized to study the association between depression and heavy alcohol use.  Objective: To examine the association between depressive symptoms and alcohol consumption by integrating multiple sources of data including EMA, clinical assessment, and wearable sensors.  Methods: Individuals with MDD complete an 8-week protocol that involves tracking depressive symptoms and alcohol consumption daily through an EMA. Mood is captured via surveys delivered twice daily that include 10 items of the Positive and Negative Affect Scale (PANAS) assessing negative affect (NA) and positive affect (PA). Participants wear Empatica E4 wristband sensors that track electrodermal activity (EDA) and accelerometer data 23 hours/day. The clinician-rated Hamilton Depression Rating Scale (HDRS) is administered biweekly to assess depressive symptoms. MovisensXS, the app delivering the EMA, tracks text messages, phone calls, location, app usage, and screen on/off behavior.  Results: To date, 16 of 30 projected participants have completed the study. All participants are expected to complete the study by 10/2017. Preliminary analyses confirmed the accuracy of the daily mood ratings. There was a significant linear relationship between NA/PA ratio from EMA ratings and the clinician-based ratings (P=1.3e-6). To focus on the association of low mood and drinking behavior, we solely included instances where NA>=PA and observed a significant association (P=0.001) between low mood (as a ratio of total NA divided by PA) and higher alcohol use. Analyses will be repeated for all 30 participants. E4 accelerometer data and location data will help elucidate whether mobility moderates the association between mood and depression, such that individuals who drink at home may exhibit greater depressive symptomatology. Finally, the association between EDA and alcohol use will be examined. Final results will be presented at the Connected Health Conference.  Conclusions: To date, results show a significant association between low mood and alcohol consumption. Results of planned analyses will further clarify the temporal association between mood and alcohol use among depressed patients, and possible moderators and mediators of this relationship. A precise understanding of the association between low mood, physiological states and heavy drinking will facilitate the development of “just-in-time” ecological momentary interventions for both reduction of depressed mood and heavy drinking.},
+  journal={Connected Health Conference},
+  volume={3},
+  number={1},
+  pages={e51},
+  year={2017},
+  publisher={JMIR Publications Inc., Toronto, Canada},
+  html={https://www.iproc.org/2017/1/e51/},
+  preview={alcohol.png},
+}
+
+@article{ghandeharioun2017objective,
+  title={Objective vs. Subjective Reports of Sleep Quality in Major Depressive Disorder: A Pilot Study},
+  author={Ghandeharioun, Asma and Sangermano, Lisa and Picard, Rosalind W and Alpert, Jonathan and Dale, Chelsea and Ionescu, Dawn F and Fedor, Szymon},
+  abstract={Background: The diagnosis of major depressive disorder (MDD) is heterogeneous. For example, depressed patients exhibit varied patterns of sleep; both insomnia and hypersomnia are symptoms of depression. Assessment of sleep patterns in MDD is often limited by clinicians’ reliance on subjective self-ratings of sleep quality. Objective measures, such as sleep regularity measured by accelerometer data, may provide a more accurate understanding. This study assessed the extent to which objective sleep quality measures could detect differences among individuals with MDD. We hypothesized that we would observe variability in sleep regularity and patterns among depressed individuals. We also hypothesized that there would be a strong correlation between subjective sleep ratings and objective measurements.  Methods: Between April and October 2016, patients with MDD (n=4) and healthy volunteers (n=2) completed a protocol that involved tracking depressive symptoms and wearing Empatica E4 wristbands that recorded accelerometer data. Patients wore sensors 23 hours daily and were clinically assessed for depression symptoms and stress levels biweekly for 8 weeks using the Hamilton Depression Rating Scale (HDRS). We developed an algorithm to calculate objective sleep based on accelerometer data. We calculated sleep regularity indices for both objective and subjective sleep. We utilized Pearson correlation to compare sleep regularity indices and t-statistics to compare the sleep regularity between depressed and healthy samples.  Results: On average, the objective (accelerometer-based) and subjective (self-reported) sleep/awake time periods matched 74.52% of the time for each user (std=6.55%). A trend toward positive correlation between objective and subjective sleep regularity indices did not reach statistical significance in this small sample (r=0.79, p=0.06). Another trend that suggested depressed users had a lower objective sleep regularity index was also not significant (p=0.14).  Conclusion: Our analyses revealed that individuals’ subjective sleep ratings and objective data from the E4 sensors were potentially correlated but did not reach significance in this sample. Further analyses also suggested an association between lower objective sleep regularity and depressive symptoms as measured by the HDRS. We are continuing to recruit new patients for this protocol and further data will be reported from the larger sample during the conference.},
+  journal={Anxiety and Depression Association of America (ADAA)},
+  year={2017},
+  preview={sleep.png},
+}
+
+@article{howe2017location,
+  title={Location patterns from phone sensors may help predict depressive symptoms: a longitudinal pilot study},
+  author={Howe, Esther and Ghandeharioun, Asma and Pedrelli, Paola and Mischoulon, David and Picard, Rosalind W and Fedor, Szymon},
+  abstract={Major depressive disorder (MDD) is a serious and prevalent disease with a variable course. Ubiquitous smartphone technology has the potential to inform and improve clinical care by monitoring patients’ symptoms and behavioral patterns.The extent to which the changes in depressive symptoms can be predicted with cell phone data remains unknown.},
+  journal={Association for Behavioral and Cognitive Therapies Annual Convention --Tech SIG (ABCT)},
+  year={2017},
+  preview={location.png},
+}
+
+@article{sangermano2017incoming,
+  title={Cell phone data as a potential predictor of depression severity: a pilot study},
+  author={Sangermano, Lisa and Ghandeharioun, Asma and Picard, Rosalind W and Alpert, Jonathan and Dale, Chelsea and Fedor, Szymon and Ionescu, Dawn F},
+  abstract={Background: Major depressive disorder (MDD) is a serious and prevalent disease with an unpredictable course. Cell phone technology can assist doctors by monitoring patients’ symptoms, and may eventually be useful in the prediction of depressive episode time courses. However, the extent to which the course of depression can be predicted with cell phone data remains unknown. The quantitative measurement of communication patterns (i.e., number of text messages and phone calls) between depressed patients and their contacts may be useful for the prognostication of the course of depression. We predicted that more communication with social contacts via texts and phone calls would correlate with lower depression scores.  Methods: Between April 2016 and March 2017, patients with MDD (n=12) and healthy volunteers (n=4) completed an 8-week protocol that involved tracking depressive symptoms and mobile phone usage. All patients were assessed at 2-week intervals for depression symptoms as measured with the Hamilton Depression Rating Scale (HDRS). Movisens (an Android application) was used to measure incoming and outgoing SMS (text messages) and phone calls, and missed calls.  We used linear mixed-effects models with random intercepts and slopes to assess the relationship between the HDRS total score and the number of calls/texts in the week prior to clinical assessment.  Results: An increased duration of calls received during the week prior to clinical assessment were related to increases in total HDRS scores (t=0.005, p=0.012). However, an increased number of calls made during the week prior to the assessment were related to decreases in total HDRS scores (t=-0.887, p=0.033). Conclusion: Contrary to our hypothesis, depressed patients with longer incoming calls in the week prior to their study visit had significantly more subjectively reported symptoms of depression. Though the content of interactions was unknown, this may represent a relationship between negative interactions with social contacts and increased depressive symptoms. Alternatively, as patients’ social contacts begin to suspect worsening depression, they may mobilize support through cell phone communications. Further research is necessary to discern the context of social connectedness and symptoms of depression. On the other hand, the HDRS symptoms improved as the depressed individual made more calls the week prior to the assessment. This could be interpreted as the social interactions that are made at will can improve the depressive symptoms.},
+  journal={Anxiety and Depression Association of America (ADAA)},
+  year={2017},
+  preview={cellphone.png},
+}
+
+@article{taylor2016machine,
+  title={Machine learning of sleep and wake behaviors to classify self-reported evening mood},
+  author={Taylor, Sara and Jaques, Natasha and Sano, Akane and Azaria, Asaph and Ghandeharioun, Asma and Picard, Rosalind W},
+  abstract={The SNAPSHOT Study is a large-scale and long-term study that seeks to measure: Sleep, Networks, Affect, Performance, Stress, and Health using Objective Techniques. This study investigates: (1) how daily behaviors influence sleep, stress, mood, and other wellbeing-related factors (2) how accurately we can recognize/predict stress, mood and wellbeing (3) how interactions in a social network influence sleep behaviors. In this work we investigate the use of machine learning methods, using sleep and wake data, to predict mood. We seek to model behavioral patterns to predict these downturns in mood and begin to understand what will help build resilience to depression. Our results reveal that stress and happiness can be predicted most reliably from these signals, and that data collected while participants were asleep is particularly important to classifying happiness.},
+  journal={SLEEP},
+  year={2016},
+  preview={sleepmood.png},
+}
+
+
+@article{howe2018depression,
+  title={Depression and emotional reactivity: a closer examination of daily variations in affect},
+  author={Howe, Esther and Nauphal, Maya and Shapero, Ben and Bentley, Kate and Mischoulon, David and Ghandeharioun, Asma and Fedor, Szymon and Picard, Rosalind W and
+Pedrelli, Paola},
+  journal={Association for Behavioral and Cognitive Therapies Annual Convention (ABCT)},
+  year={2018},
+  preview={sleep.png},
+}
+
+@article{ghandeharioun2017location,
+  title={Location variability from commodity phone sensors is negatively associated with self-reported depression score: a pilot study},
+  author={Ghandeharioun, Asma and Fedor, Szymon and  Sangermano, Lisa and Alpert, Jonathan and Dale, Chelsea and Ionescu, Dawn F and Picard, Rosalind W},
+  journal={Association for Psychological Science (APS)},
+  year={2017},
+}
+
+
+@article{alizadehsani2013data,
+  bibtex_show={true},
+  title={A data mining approach for diagnosis of coronary artery disease},
+  author={Alizadehsani, Roohallah and Habibi, Jafar and Hosseini, Mohammad Javad and Mashayekhi, Hoda and Boghrati, Reihane and Ghandeharioun, Asma and Bahadorian, Behdad and Sani, Zahra Alizadeh},
+  journal={Computer methods and programs in biomedicine},
+  volume={111},
+  number={1},
+  pages={52--61},
+  year={2013},
+  publisher={Elsevier},
+  html={https://pubmed.ncbi.nlm.nih.gov/23537611/}
+}
+
+@article{alizadehsani2012diagnosis,
+  bibtex_show={true},
+  title={Diagnosis of coronary arteries stenosis using data mining},
+  author={Alizadehsani, Roohallah and Habibi, Jafar and Bahadorian, Behdad and Mashayekhi, Hoda and Ghandeharioun, Asma and Boghrati, Reihane and Sani, Zahra Alizadeh},
+  journal={Journal of Medical Signals and Sensors},
+  volume={2},
+  number={3},
+  pages={153--159},
+  year={2012},
+  publisher={Medknow},
+  html={https://pubmed.ncbi.nlm.nih.gov/23717807/},
+}
+
+@inproceedings{alizadehsani2012diagnosis,
+  title={Diagnosis of coronary artery disease using cost-sensitive algorithms},
+  author={Alizadehsani, Roohallah and Hosseini, Mohammad Javad and Sani, Zahra Alizadeh and Ghandeharioun, Asma and Boghrati, Reihane},
+  booktitle={2012 IEEE 12th International Conference on Data Mining Workshops (ICDM)},
+  pages={9--16},
+  year={2012},
+  organization={IEEE},
+  html={https://ieeexplore.ieee.org/document/6406417},
+}
+
+@article{alizadehsani2013diagnosing,
+  title={Diagnosing coronary artery disease via data mining algorithms by considering laboratory and echocardiography features},
+  author={Alizadehsani, Roohallah and Habibi, Jafar and Sani, Zahra Alizadeh and Mashayekhi, Hoda and Boghrati, Reihane and Ghandeharioun, Asma and Khozeimeh, Fahime and Alizadeh-Sani, Fariba},
+  journal={Research in cardiovascular medicine},
+  volume={2},
+  number={3},
+  pages={133--139},
+  year={2013},
+  publisher={Medknow},
+  html={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4253773/},
+}
+
+@article{alizadehsani2012diagnosis,
+  title={Diagnosis of coronary artery disease using data mining based on lab data and echo features},
+  author={Alizadehsani, Roohallah and Habibi, Jafar and Sani, Zahra Alizadeh and Mashayekhi, Hoda and Boghrati, Reihane and Ghandeharioun, Asma and Bahadorian, Behdad},
+  journal={Journal of Medical and Bioengineering},
+  volume={1},
+  number={1},
+  year={2012},
+  pdf={20130412053847102.pdf},
+}
+
+@article{alizadehsani2012exerting,
+  title={Exerting cost-sensitive and feature creation algorithms for coronary artery disease diagnosis},
+  author={Alizadehsani, Roohallah and Hosseini, Mohammad Javad and Boghrati, Reihane and Ghandeharioun, Asma and Khozeimeh, Fahime and Sani, Zahra Alizadeh},
+  journal={International Journal of Knowledge Discovery in Bioinformatics (IJKDB)},
+  volume={3},
+  number={1},
+  pages={59--79},
+  year={2012},
+  publisher={IGI Global}
 }
