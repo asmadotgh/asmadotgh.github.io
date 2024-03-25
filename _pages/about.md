@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Research Scientist, Google Research, NYC
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: >
+    # <p>Research Scientist</p>
+    # <p>Google Research</p>
+    # <p>NYYC</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Asma Ghandeharioun, a research scientist at the <a href="https://google.ai/pair">People + AI research</a> team in Google Research. I work on aligning AI with human values through better undrestanding [<a href="https://pair-code.github.io/interpretability/patchscopes/">1</a>] and controlling (language) models [<a href="/assets/pdf/2928_post_hoc_explanations_of_langu.pdf">2</a>], and uniquely by demistifying their inner workings [<a href="https://pair.withgoogle.com/explorables/grokking/">3</a>] and correcting collective misconseptions along the way [<a href="/assets/pdf/13353_does_localization_inform_editi.pdf">4</a>, <a href="https://arxiv.org/abs/2312.03656">5</a>].
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I received my <a href="/assets/pdf/ghandeharioun-asma_gh-phd-MAS-2021-thesis.pdf">Ph.D.</a> from the <a href="https://www.media.mit.edu/groups/affective-computing/overview/">Affective Computing Group</a>, <a href="https://www.media.mit.edu/">MIT Media Lab</a>. I am fortunate to have had <a href="https://www.media.mit.edu/people/picard/overview/">Roz</a> as my advisor. In addition, I have had research experiences at Google Research, Microsoft Research, and EPFL, many of which have evolved into exciting long-term collaborations.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+ <p style="font-weight: bold;"><a href="/assets/pdf/Asma_Ghandeharioun_resume_2024.pdf">You can download my résumé here.</a></p>
