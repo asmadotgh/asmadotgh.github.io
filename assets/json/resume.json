@@ -1,36 +1,96 @@
 {
-  "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+  "Intro": {
+    "name": "Asma Ghandeharioun",
+    "label": "Research Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "aghandeharioun@google.com",
+    "phone": "(857) 303-1203",
+    "url": "https://alum.mit.edu/www/asma_gh",
+    "summary": "I am a research scientist at the People + AI research team in Google Research. I work on aligning AI with human values through better undrestanding and controlling (language) models, and uniquely by demistifying their inner workings and correcting collective misconseptions along the way.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "111 8th Ave",
+      "postalCode": "NY 10011",
+      "city": "New York City",
       "countryCode": "US",
-      "region": "California"
+      "region": "New York"
     },
     "profiles": [
       {
+        "network": "Google Scholar",
+        "username": "CkfQy2gAAAAJ",
+        "url": "https://scholar.google.com/citations?user=CkfQy2gAAAAJ"
+      },
+      {
+        "network": "GitHub",
+        "username": "asmadotgh",
+        "url": "https://github.com/asmadotgh"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "asma-ghandeharioun-4229897",
+        "url": "https://www.linkedin.com/in/asma-ghandeharioun-4229897"
+      },
+      {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "ghandeharioun",
+        "url": "https://twitter.com/ghandeharioun"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Google Research",
+      "position": "Research Scientist",
+      "url": "https://research.google/people/asma-ghandeharioun/",
+      "startDate": "2021-09",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    },
+    {
+      "name": "Google Research",
+      "position": "Research Intern",
+      "url": "",
+      "startDate": "2019-09",
+      "endDate": "2020-01",
+      "summary": "",
+      "highlights": [""]
+    },
+    {
+      "name": "Google Research",
+      "position": "Software Engineering Intern",
+      "url": "",
+      "startDate": "2018-06",
+      "endDate": "2018-08",
+      "summary": "",
+      "highlights": [""]
+    },
+    {
+      "name": "MIT Media Lab",
+      "position": "Research Assistant",
+      "url": "",
+      "startDate": "20214-09",
+      "endDate": "2021-06",
+      "summary": "",
+      "highlights": [""]
+    },
+    {
+      "name": "Microsoft Research",
+      "position": "Research Assistant",
+      "url": "",
+      "startDate": "2017-06",
+      "endDate": "2017-08",
+      "summary": "",
+      "highlights": [""]
+    },
+    {
+      "name": "Ecole Polyetechnique Federale de Lausanne (EPFL)",
+      "position": "Research Intern",
+      "url": "",
+      "startDate": "2013-06",
+      "endDate": "2013-09",
+      "summary": "",
+      "highlights": [""]
     }
   ],
   "volunteer": [
@@ -46,15 +106,37 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "Massachusetts Institute of Technology (MIT)",
+      "location": "Cambridge, MA",
+      "url": "",
+      "area": "Media Arts & Sciences (Computer Science)",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2016-09",
+      "endDate": "2021-05",
+      "score": "5.0/5.0",
+      "courses": [""]
+    },
+    {
+      "institution": "Massachusetts Institute of Technology (MIT)",
+      "location": "Cambridge, MA",
+      "url": "",
+      "area": "Media Arts & Sciences (Computer Science)",
+      "studyType": "Master's",
+      "startDate": "2014-09",
+      "endDate": "2016-08",
+      "score": "5.0/5.0",
+      "courses": [""]
+    },
+    {
+      "institution": "Sharif University of Technology",
+      "location": "Tehran, Ir",
+      "url": "",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor's",
+      "startDate": "2009-09",
+      "endDate": "2014-07",
+      "score": "",
+      "courses": [""]
     }
   ],
   "awards": [
@@ -64,50 +146,6 @@
       "awarder": "Royal Swedish Academy of Sciences",
       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
       "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "publications": [
@@ -146,54 +184,6 @@
         "Quantum Communication",
         "Quantum Teleportation"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
