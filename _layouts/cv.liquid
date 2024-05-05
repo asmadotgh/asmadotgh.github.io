@@ -14,7 +14,9 @@ layout: default
             ><i class="fa-solid fa-file-pdf"></i
           >CV</a>
         {% endif %}
-        <p class="post-description">{{ post.description }}</p>
+
+        <br><br>
+        
         {% if page.resume_pdf %}
           <a
             href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url}}"
@@ -31,7 +33,7 @@ layout: default
     </header>
 
     <article>
-      <div class="cv">
+      <div class="cv margin-top: 20px">
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
@@ -69,13 +71,15 @@ layout: default
             ><i class="fa-solid fa-file-pdf"></i
           >CV</a>
         {% endif %}
-        <p class="post-description">{{ post.description }}</p>
+
+        <br><br>
+
         {% if page.resume_pdf %}
           <a
             href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url}}"
             target="_blank"
             rel="noopener noreferrer"
-            class="float-left"
+            class="float-right"
             ><i class="fa-solid fa-file-pdf"></i
           >Résumé</a>
         {% endif %}
