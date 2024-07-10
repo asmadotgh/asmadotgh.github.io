@@ -22,4 +22,6 @@ I am Asma Ghandeharioun, a senior research scientist in Google DeepMind. I work 
 
 I received my <a href="/assets/pdf/ghandeharioun-asma_gh-phd-MAS-2021-thesis.pdf">Ph.D.</a> from the <a href="https://www.media.mit.edu/groups/affective-computing/overview/">Affective Computing Group</a>, <a href="https://www.media.mit.edu/">MIT Media Lab</a>. I am fortunate to have had <a href="https://www.media.mit.edu/people/picard/overview/">Roz</a> as my advisor. In addition, I have had research experiences at Google Research, Microsoft Research, and EPFL, many of which have evolved into exciting long-term collaborations.
 
+In a previous life, I conducted research in the digital mental health and wellbeing space, collaborated with medical professionals from Harvard and renowned hospitals in the Boston area such as Massachusetts General Hospital (MGH) and Brigham and Women's Hospital (BWH), and published in venues such as Frontiers in Psychiatry and Psychology of Well-being. This area remains very close to my heart, and I occasionally dabble in it during my free time.
+
  <p style="font-weight: bold;"><a href="/assets/pdf/Asma_Ghandeharioun_resume_2024.pdf">You can download my résumé here.</a></p>
