@@ -3,29 +3,6 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{yehudai2025count,
-  selected={false},
-  bibtex_show={true},
-  title={When Can Transformers Count to n?},
-  author={Yehudai, Gilad and Kaplan, Haim and Ghandeharioun, Asma and Geva, Mor and Globerson, Amir},
-  year={2025},
-  journal={arxiv},
-  abstract={Large language models based on the transformer architectures can solve highly complex tasks. But are there simple tasks that such models cannot solve? Here we focus on very simple counting tasks, that involve counting how many times a token in the vocabulary have appeared in a string. We show that if the dimension of the transformer state is linear in the context length, this task can be solved. However, the solution we propose does not scale beyond this limit, and we provide theoretical arguments for why it is likely impossible for a size limited transformer to implement this task. Our empirical results demonstrate the same phase-transition in performance, as anticipated by the theoretical argument. Our results demonstrate the importance of understanding how transformers can solve simple tasks.},
-  arxiv={2407.15160},
-  preview={countn.png},
-}
-
-@article{bhalla2025unifying,
-  selected={false},
-  bibtex_show={true},
-  title={Towards unifying interpretability and control: Evaluation via intervention},
-  author={Bhalla, Usha and Srinivas, Suraj and Ghandeharioun, Asma and Lakkaraju, Himabindu},
-  year={2025},
-  journal={arxiv},
-  abstract={With the growing complexity and capability of large language models, a need to understand model reasoning has emerged, often motivated by an underlying goal of controlling and aligning models. While numerous interpretability and steering methods have been proposed as solutions, they are typically designed either for understanding or for control, seldom addressing both. Additionally, the lack of standardized applications, motivations, and evaluation metrics makes it difficult to assess methods' practical utility and efficacy. To address the aforementioned issues, we argue that intervention is a fundamental goal of interpretability and introduce success criteria to evaluate how well methods can control model behavior through interventions. To evaluate existing methods for this ability, we unify and extend four popular interpretability methods-sparse autoencoders, logit lens, tuned lens, and probing-into an abstract encoder-decoder framework, enabling interventions on interpretable features that can be mapped back to latent representations to control model outputs. We introduce two new evaluation metrics: intervention success rate and coherence-intervention tradeoff, designed to measure the accuracy of explanations and their utility in controlling model behavior. Our findings reveal that (1) while current methods allow for intervention, their effectiveness is inconsistent across features and models, (2) lens-based methods outperform SAEs and probes in achieving simple, concrete interventions, and (3) mechanistic interventions often compromise model coherence, underperforming simpler alternatives, such as prompting, and highlighting a critical shortcoming of current interpretability approaches in applications requiring control.},
-  arxiv={2411.04430},
-  preview={interpretabilitycontrol.png},
-}
 
 @article{lepori2025racing,
   selected={true},
@@ -38,6 +15,7 @@
   arxiv={2410.02102},
   preview={racingthoughts.png},
 }
+
 
 @article{ghandeharioun2024persona,
   selected={true},
@@ -69,7 +47,44 @@
   preview={patchscopes.png},
 }
 
-@article{hase2024localization,
+@article{yehudai2024count,
+  selected={false},
+  bibtex_show={true},
+  title={When Can Transformers Count to n?},
+  author={Yehudai, Gilad and Kaplan, Haim and Ghandeharioun, Asma and Geva, Mor and Globerson, Amir},
+  year={2024},
+  journal={arxiv},
+  abstract={Large language models based on the transformer architectures can solve highly complex tasks. But are there simple tasks that such models cannot solve? Here we focus on very simple counting tasks, that involve counting how many times a token in the vocabulary have appeared in a string. We show that if the dimension of the transformer state is linear in the context length, this task can be solved. However, the solution we propose does not scale beyond this limit, and we provide theoretical arguments for why it is likely impossible for a size limited transformer to implement this task. Our empirical results demonstrate the same phase-transition in performance, as anticipated by the theoretical argument. Our results demonstrate the importance of understanding how transformers can solve simple tasks.},
+  arxiv={2407.15160},
+  preview={countn.png},
+}
+
+@article{bhalla2024unifying,
+  selected={false},
+  bibtex_show={true},
+  title={Towards unifying interpretability and control: Evaluation via intervention},
+  author={Bhalla, Usha and Srinivas, Suraj and Ghandeharioun, Asma and Lakkaraju, Himabindu},
+  year={2024},
+  journal={arxiv},
+  abstract={With the growing complexity and capability of large language models, a need to understand model reasoning has emerged, often motivated by an underlying goal of controlling and aligning models. While numerous interpretability and steering methods have been proposed as solutions, they are typically designed either for understanding or for control, seldom addressing both. Additionally, the lack of standardized applications, motivations, and evaluation metrics makes it difficult to assess methods' practical utility and efficacy. To address the aforementioned issues, we argue that intervention is a fundamental goal of interpretability and introduce success criteria to evaluate how well methods can control model behavior through interventions. To evaluate existing methods for this ability, we unify and extend four popular interpretability methods-sparse autoencoders, logit lens, tuned lens, and probing-into an abstract encoder-decoder framework, enabling interventions on interpretable features that can be mapped back to latent representations to control model outputs. We introduce two new evaluation metrics: intervention success rate and coherence-intervention tradeoff, designed to measure the accuracy of explanations and their utility in controlling model behavior. Our findings reveal that (1) while current methods allow for intervention, their effectiveness is inconsistent across features and models, (2) lens-based methods outperform SAEs and probes in achieving simple, concrete interventions, and (3) mechanistic interventions often compromise model coherence, underperforming simpler alternatives, such as prompting, and highlighting a critical shortcoming of current interpretability approaches in applications requiring control.},
+  arxiv={2411.04430},
+  preview={interpretabilitycontrol.png},
+}
+
+
+@article{friedman2024interpretability,
+  selected={true},
+  bibtex_show={true},
+  title={Interpretability illusions in the generalization of simplified models},
+  abstract={A common method to study deep learning systems is to create simplified representations---for example, using singular value decomposition to visualize the model's hidden states in a lower dimensional space. This approach assumes that the simplified model is faithful to the original model. Here, we illustrate an important caveat to this assumption: even if a simplified representation of the model can accurately approximate the original model on the training set, it may fail to match its behavior out of distribution; the understanding developed from simplified representations may be an illusion. We illustrate this by training Transformer models on controlled datasets with systematic generalization splits, focusing on the Dyck balanced-parenthesis languages. We simplify these models using tools like dimensionality-reduction and clustering, and find clear patterns in the resulting representations. We then explicitly test how these simplified proxy models match the original models behavior on various out-of-distribution test sets. Generally, the simplified proxies are less faithful out of distribution. For example, in cases where the original model generalizes to novel structures or deeper depths, the simplified model may fail to generalize, or may generalize too well. We then show the generality of these results: even model simplifications that do not directly use data can be less faithful out of distribution, and other tasks can also yield generalization gaps. Our experiments raise questions about the extent to which mechanistic interpretations derived using tools like SVD can reliably predict what a model will do in novel situations.},
+  author={Friedman, Dan and Lampinen, Andrew Kyle and Dixon, Lucas and Chen, Danqi and Ghandeharioun, Asma},
+  journal={International Conference on Machine Learning (ICML)},
+  year={2024},
+  arxiv={2312.03656},
+  preview={simplification.png},
+}
+
+@article{hase2023localization,
   selected={true},
   bibtex_show={true},
   title={Does localization inform editing? surprising differences in causality-based localization vs. knowledge editing in language models},
@@ -82,18 +97,6 @@
   pdf={13353_does_localization_inform_editi.pdf},
   preview={localization.png},
   award={Spotlight},
-}
-
-@article{friedman2023interpretability,
-  selected={true},
-  bibtex_show={true},
-  title={Interpretability illusions in the generalization of simplified models},
-  abstract={A common method to study deep learning systems is to create simplified representations---for example, using singular value decomposition to visualize the model's hidden states in a lower dimensional space. This approach assumes that the simplified model is faithful to the original model. Here, we illustrate an important caveat to this assumption: even if a simplified representation of the model can accurately approximate the original model on the training set, it may fail to match its behavior out of distribution; the understanding developed from simplified representations may be an illusion. We illustrate this by training Transformer models on controlled datasets with systematic generalization splits, focusing on the Dyck balanced-parenthesis languages. We simplify these models using tools like dimensionality-reduction and clustering, and find clear patterns in the resulting representations. We then explicitly test how these simplified proxy models match the original models behavior on various out-of-distribution test sets. Generally, the simplified proxies are less faithful out of distribution. For example, in cases where the original model generalizes to novel structures or deeper depths, the simplified model may fail to generalize, or may generalize too well. We then show the generality of these results: even model simplifications that do not directly use data can be less faithful out of distribution, and other tasks can also yield generalization gaps. Our experiments raise questions about the extent to which mechanistic interpretations derived using tools like SVD can reliably predict what a model will do in novel situations.},
-  author={Friedman, Dan and Lampinen, Andrew Kyle and Dixon, Lucas and Chen, Danqi and Ghandeharioun, Asma},
-  journal={International Conference on Machine Learning (ICML), to appear},
-  year={2024},
-  arxiv={2312.03656},
-  preview={simplification.png},
 }
 
 @inproceedings{friedman2023comparing,
