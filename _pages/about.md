@@ -24,4 +24,4 @@ I received my <a href="/assets/pdf/ghandeharioun-asma_gh-phd-MAS-2021-thesis.pdf
 
 In a previous life, I conducted research in the digital mental health and wellbeing space, collaborated with medical professionals from Harvard and renowned hospitals in the Boston area such as Massachusetts General Hospital (MGH) and Brigham and Women's Hospital (BWH), and published in venues such as Frontiers in Psychiatry and Psychology of Well-being. This area remains close to my heart, and I occasionally dabble in it during my free time.
 
- <p style="font-weight: bold;"><a href="/assets/pdf/Asma_Ghandeharioun_resume_2024.pdf">You can download my résumé here.</a></p>
+ <p style="font-weight: bold;"><a href="/assets/pdf/Asma_Ghandeharioun_resume_2025.pdf">You can download my résumé here.</a></p>
